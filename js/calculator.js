@@ -32,10 +32,13 @@ buttons.forEach((button) => {
                 // Заменяем × на * и вычисляем выражение
                 field.value = eval(field.value.replace(/×/g, "*"));
                 if(field.value ==="Infinity"){
-                    field.value = "ты охренел???"
+                    field.value = "FUCK YOU!"
+                }
+                else if(field.value ==="undefined"){
+                    field.value = "WHERE?!"
                 }
             } catch {
-                field.value = "блять,ошибка!!!";
+                field.value = "mew, error!";
             }
             openBrackets = 0; // Сбрасываем счётчик скобок после вычислений
         } else if (value === "( )") {
