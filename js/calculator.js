@@ -87,3 +87,6 @@ catButton.addEventListener("click", () => {
         catImage.src = "images/white.png"; // Меняем картинку
     }
 });
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+    document.getElementById('field').setAttribute('readonly', true);
+  }
