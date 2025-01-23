@@ -71,8 +71,9 @@ body{
 
 }
 #buttons{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2vh;
     padding: 2vh;
     padding-top: 8vh ;
@@ -105,7 +106,7 @@ body{
 }
 img{
     padding: 0vh ;
-    width: 10vh;
+    width: auto;
     height: 10vh;
     border-radius:2.3vh;
 }
@@ -121,7 +122,7 @@ img{
         width: 100vw;
         height: 30vh;
         border-radius: 0vh;
-        z-index: 10;
+        z-index: 1;
     }
     #field{
         width: 90vw;
@@ -130,19 +131,20 @@ img{
         background-color:var(--panel-color) ;
         width: 100vw;
         height: 100vh;
-        display: grid;
-        z-index: -10;
+        z-index: -1;
     }
     #buttons{
         width: 90vw;
         gap: 1vh;
         padding: 0.1vh;
-        padding-top: 5vh ;
+        padding-top: 5vh;
         
     }
     .button{
-        width: 10vh;
+        font-size: 5.5vh;
+        width: 20vw;
         height: 12vh;
+        justify-content: center;
     }
     .button:hover{
         box-shadow: var(--shadow);
@@ -152,8 +154,14 @@ img{
         box-shadow: inset var(--shadow);
         transform: scale(0.95);
     }
-    img{
-        padding: 2vh ;
-        border-radius:4vh;
+   img{
+        padding-top: 2vh ;
     }
 }
+
+
+
+/* Учительница:
+- Дети, математика и информатика очень важные предметы, они научат вас достойно зарабатывать во взрослой жизни!
+Вовочка:
+- Сара Ивановна, мне папа сказал, что самые прибыльные занятия, это торговля оружием и наркотиками! Когда мы их будем изучать? */

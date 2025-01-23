@@ -87,6 +87,13 @@ catButton.addEventListener("click", () => {
         catImage.src = "images/white.png"; // Меняем картинку
     }
 });
+//////////////////////////////////////////////////////////////////////
 if (/Mobi|Android/i.test(navigator.userAgent)) {
     document.getElementById('field').setAttribute('readonly', true);
   }
+/////////////////////////////////////////////////////////////////////
+
+
+//   Вспоминают старые математики:
+// - Когда-то я знал первые 100 знаков числа Пи.
+// - А я - последние.
