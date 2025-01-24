@@ -70,7 +70,7 @@ let currentTheme = "light";
 
 catButton.addEventListener("click", () => {
     // Убираем все возможные классы для тем
-    body.classList.remove("dark", "sea", "forest");
+    body.classList.remove("dark", "sea", "forest,light");
 
     if (currentTheme === "light") {
         body.classList.add("sea");  // Переключаем на тему "sea"
