@@ -34,8 +34,14 @@ buttons.forEach((button) => {
                 if(field.value ==="Infinity"){
                     field.value = "FUCK YOU!"
                 }
+                else if(field.value ==="-Infinity"){
+                    field.value = "FUCK YOU!"
+                }
                 else if(field.value ==="undefined"){
                     field.value = "WHERE?!"
+                }
+                else if(field.value ==="NaN"){
+                    field.value = "?!"
                 }
             } catch {
                 field.value = "mew, error!";
@@ -70,7 +76,7 @@ let currentTheme = "light";
 
 catButton.addEventListener("click", () => {
     // Убираем все возможные классы для тем
-    body.classList.remove("dark", "sea", "forest,light");
+    body.classList.remove("dark", "sea", "forest", "light");
 
     if (currentTheme === "light") {
         body.classList.add("sea");  // Переключаем на тему "sea"
