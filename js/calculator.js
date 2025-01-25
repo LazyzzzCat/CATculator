@@ -72,12 +72,11 @@ const catButton = document.getElementById("cat");
 const body = document.body;
 const catImage = document.getElementById("cat-img");  // Ссылаемся на саму картинку
 // Изначально у нас будет светлая тема по умолчанию
-let currentTheme = "light";
+let currentTheme = "sea";
 
 catButton.addEventListener("click", () => {
     // Убираем все возможные классы для тем
     body.classList.remove("dark", "sea", "forest", "light");
-
     if (currentTheme === "light") {
         body.classList.add("sea");  // Переключаем на тему "sea"
         currentTheme = "sea";

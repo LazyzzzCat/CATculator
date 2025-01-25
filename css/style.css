@@ -4,27 +4,30 @@
     --but-color: #f5ebe0;
    --text-color: #1b1b1e;
    --shadow: 1px 1px 10px rgba(0, 0, 0, 1);
-    
+   --font:  "Lobster", serif;
 }
 .dark{
     --bg-color: #0b090a;
     --panel-color: #660708;
      --but-color: #161a1d;
      --text-color: #f5f3f4;
-        
+     --font:  "Anton", serif;
 }
 .sea{
     --bg-color: #00296b;
     --panel-color: #003f88;
     --but-color: #00509d;
     --text-color: #ffd500;
+    --font: 'Comic Sans MS', 'Comic Neue', sans-serif;    
 }
 .forest{
     --bg-color: #588157;
     --panel-color: #3a5a40;
     --but-color: #344e41;
     --text-color: #dad7cd;
+    --font: "Shadows Into Light", serif;
 }
+/* //////////////////////////////////////////////////////////////////// */
 body{
     background-color:  var(--bg-color);
     margin: 0;
@@ -51,7 +54,7 @@ body{
 }
 #field{
     color: var(--text-color);
-    font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
+    font-family: var(--font); 
     font-weight: bolder;
     background:none;
     font-size: 6vh;
@@ -79,7 +82,7 @@ body{
 
 }
 .button{
-    font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;    
+    font-family: var(--font); 
      font-weight: bolder;
     box-shadow: var(--shadow);
     font-size: 6vh;
@@ -109,6 +112,7 @@ img{
     height: 10vh;
     border-radius:2.3vh;
 }
+/* ////////////////////////////////////////////////////////////////////// */
 @media (max-width: 480px) {
     body{
         display: block;
