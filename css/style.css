@@ -157,7 +157,8 @@ img{
         transform: scale(0.95);
     }
    img{
-        padding-top: 2vh ;
+        padding-top: 2.21vh ;
+        border-radius:3vh;
     }
 }
 
